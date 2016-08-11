@@ -22,8 +22,6 @@ public class Chapter2Application {
 		AutoConfigProperties autoConfigProperties = (AutoConfigProperties) ctx.getBean("autoConfigProperties");
 		System.out.println(autoConfigProperties.toString());
 
-		System.out.println(autoConfigProperties.getConfig().get(0));
-
 		ValueConfigProperties valueConfigProperties = ctx.getBean(ValueConfigProperties.class);
 		System.out.println(valueConfigProperties.toString());
 	}
